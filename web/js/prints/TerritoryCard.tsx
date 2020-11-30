@@ -61,7 +61,8 @@ const TerritoryCard = ({
 
       <div className={styles.addresses}>{territory.addresses}</div>
 
-      {settings.dev && // TODO: remove feature flag
+      {/* FIXME: TerritoryCardMapOnly layout breaks when the QR code is added */}
+      {false && settings.dev && // TODO: remove feature flag
       <div className={styles.qrCode}>
         <TerritoryQrCode value="https://qr.territorybro.com/lDiMxApRwbY"/>
       </div>

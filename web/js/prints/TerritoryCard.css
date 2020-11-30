@@ -8,11 +8,11 @@
     --qr-code-size: 15mm;
     display: grid;
     grid-template-columns: var(--minimap-size) calc(var(--map-width) - var(--minimap-size)) auto var(--minimap-size);
-    grid-template-rows: var(--minimap-size) auto var(--qr-code-size) 8mm;
+    grid-template-rows: var(--minimap-size) auto /*var(--qr-code-size)*/ 8mm;
     grid-template-areas:
             "minimap header header number"
             "map map addresses addresses"
-            "map map qr-code qr-code"
+            /*"map map qr-code qr-code"*/
             "footer footer footer footer";
 }
 
